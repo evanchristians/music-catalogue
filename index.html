@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Music Stuff!</h1>
+      <form id="form" action="POST">
+        <fieldset>
+          <input required name="artist" type="text" placeholder="Artist" />
+          <input required name="title" type="text" placeholder="Title" />
+          <input required name="album" type="text" placeholder="Album" />
+          <input required name="genre" type="text" placeholder="Genre" />
+        </fieldset>
+        <div class="buttons">
+          <button type="submit">Save to Session</button>
+        </div>
+      </form>
+
+      <div id="music" class="music-list"></div>
+    </main>
+    <script src="./app.js" type="module" defer></script>
+  </body>
+</html>

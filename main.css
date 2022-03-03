@@ -1,0 +1,119 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #120d31;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  background: var(--black);
+  color: var(--white);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  gap: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: min(525px, 100%);
+}
+
+fieldset {
+  border: none;
+  display: grid;
+
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+input[type="text"] {
+  font-family: monospace;
+  border: none;
+  background: #ffffff22;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  color: var(--white);
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: none;
+}
+
+input[type="text"]::placeholder {
+  font-family: monospace;
+  color: var(--white);
+  opacity: 0.5;
+}
+
+button {
+  font-family: monospace;
+  border-radius: 0.25rem;
+  border: 1px solid var(--white);
+  padding: 0.5rem 1.5rem;
+  background: none;
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+button:focus {
+  outline: none;
+  color: var(--black);
+  background: var(--white);
+}
+
+button:hover {
+  color: var(--black);
+  background: var(--white);
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem auto;
+}
+
+.music-list {
+  margin-top: 1rem;
+  display: grid;
+  width: min(768px, 100%);
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+p {
+  margin: 0;
+}
+
+.music-list > div {
+  border: 1px solid var(--white);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+  flex-direction: column;
+}
+
+.btn {
+  margin-top: 1rem;
+  margin-left: auto;
+  width: 100%;
+}
